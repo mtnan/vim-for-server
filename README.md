@@ -34,10 +34,12 @@ git clone https://github.com/wklken/vim-for-server.git
 ln -s vim-for-server/vimrc ~/.vimrc
 ```
 
-#### 
+#### remove vim ^M error
 
+```
 mv ~/.vimrc ~/.vimrc_bak
 sed -e "s/\r//g" ~/.vimrc_bak > ~/.vimrc
+```
 
 #### 3. Done, enjoy it
 
